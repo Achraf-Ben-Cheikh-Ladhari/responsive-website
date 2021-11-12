@@ -1,0 +1,275 @@
+*{
+    box-sizing: border-box;
+}
+
+
+nav,
+header,
+footer{
+    display:block;
+}
+/*#####################Footer######################*/
+footer.foots{
+    background-color: #666;
+    padding-left: 10%;
+}
+footer.foots h1{
+    color: #eee;
+    font-size: 25px;
+}
+footer.foots ul{
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
+footer.foots ul li{
+    color: #eee;
+    font-size: 15px;
+    /*Spaces*/
+    line-height: 2;
+}
+
+
+
+
+
+
+
+label{
+    font-size: 30px;
+    /*Bold level 600*/
+    font-weight: 600;
+}
+
+
+p{
+    font-size: 20px;
+    line-height: 1.2;
+
+}
+body{
+    line-height: 1;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+/* ############### Nav Bar ################*/
+nav{
+    width: 100%;
+    margin: 0;
+}
+nav ul{
+    background-color:#eee ;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+ul.topnav li{
+    list-style: none;
+    float: left;
+}
+ul.topnav li.topnav-right{
+    float: right;
+}
+ul.topnav li a{
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform:uppercase ;
+    color: #666;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+ul.topnav li a:hover{
+    background-color:#0080ff ;
+    color: white;
+}
+
+ul.topnav li.dropdownicon{
+    display: none;
+}
+/*#############costom styles########*/
+#section-1-gradiant{
+    background: #076def;
+    background: -webkit-gradient(#076def,#65a5ff);
+    background: -o-linear-gradient(#076def,#65a5ff);
+    background: -moz-linear-gradient(#076def,#65a5ff);
+    background: linear-gradient(#076def,#65a5ff);
+}
+div.icon {
+    width: 100%;
+}
+div.box{
+    border-radius: 7px;
+    padding: 36px 24px 40px 24px;
+    margin: 24px;
+    text-align: center;
+    background-color:#fff ;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15),
+    0 2px 3px 0 rgba(0,0,0,.1);
+}
+article p{
+    font-size: 25px;
+    padding: 20px;
+}
+div.slopeicon img{
+    display: block;
+    margin: auto;
+    box-shadow: -2px /*Horizantal*/-2px/*Vertical*/ 20px /*Blur*/2px/*spread*/
+    rgba(0/*Shadow*/,0/*background*/,0 /*box color*/,.15/*opicity*/),
+    2px /*left*/2px/*right*/ 17px/*blur*/ 2px/*shadow*/ rgba(0,0,0,1);
+}
+button{
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    background-color: #0069ff;
+    padding: 15px 50px;
+    text-align:center;
+    display: block;
+    margin: 5px;
+    border-radius: 7px;
+}
+
+button.learnmore{
+    display: block;
+    margin: auto;
+}
+
+h1.large{
+    color: white;
+    font-size: 46px;
+    margin: 0;
+    line-height: 70px;
+}
+h1.section2header{
+    font-size: 55px;
+    text-align: center;
+}
+
+
+form h2{
+    color: white;
+}
+div.leftSide-col{
+    margin-left: 30%;
+}
+div.rightSide-col{
+    margin-left:14%
+}
+input[type="text"]{
+    font-size: 20px;
+    width: 400px;
+    min-width: 100px;
+    padding:5px;
+    border-radius: 7px;
+}
+input[type="password"]{
+    font-size: 20px;
+    width: 400px;
+    min-width: 100px;
+    padding:5px;
+    border-radius: 7px;
+}
+/*################## Mobile Style #####################*/
+@media screen and (max-width:680px){
+    ul.topnav li:not(:nth-child(1)){
+        display: none;
+    }
+    ul.topnav li.dropdownicon{
+        display:block;
+        float: right;
+    }
+    ul.responsive li.dropdownicon{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    ul.topnav.responsive{
+        position: relative;
+    }
+    ul.topnav.responsive li{
+        display: inline;
+        float: none;
+    }
+    ul.topnav.responsive li a{
+        display: block;
+        text-align: left;
+    }
+    h1.section2header{
+        font-size: 55px;
+    }
+    .col-7,
+    .col-6,
+    .col-5,
+    .col-4{
+        width: 100%;
+        margin:0;
+    }
+    article p{
+        font-size: 25px;
+    }
+    div.box{
+        padding: 5px;
+        display: block;
+    }
+
+    div.slopeicon{
+        margin: 10px;
+    }
+    div.slopeicon img{
+        width: 100%;
+    }
+    /*##########Footer###########*/
+    #mobilestack{
+        width: 50%;
+        display: block;
+
+    }
+    div.leftSide-col,
+    div.rightSide{
+        margin: 15px;
+    }
+    input[type="text"]{
+        width: 350px;
+    }
+    input[type="password"]{
+        width: 350px;
+    }
+    .videoContainer iframe{
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+}

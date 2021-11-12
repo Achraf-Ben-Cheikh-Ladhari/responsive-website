@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Responsive Website</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='C:\Users\chrou\Desktop\travaillefac\udemy\responsive website\styles\main.css'>
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav>
+        <ul class="topnav" id="dropdownclk">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#News">News</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#About">About</a></li>
+            <li class="topnav-right"><a href="#Sign Up">Sign Up</a></li>
+            <li class="topnav-right"><a href="#Sign In">Sign In</a></li>
+            <li class="dropdownicon"><a href="javascript:void(0);" onclick="clk()">&#9776;</a></li>
+        </ul>
+    </nav>
+    <!-- Container -->
+    <div class="container" id ="section-1-gradiant">
+        <div class="row">
+            <div class="col-6">
+                <div class="leftSide-col">
+                    <h1 class="large">Crazy Radness</h1>
+                    <h1 class="large">Made For Developers</h1>
+                </div>
+                <form>
+                    <div class="leftSide-col">
+                        <h2>Username</h2>
+                        <input class="inputbox" name="username" type="text" placeholder="Username">
+                        <h2>Password</h2>
+                        <input class="inputbox" name="password" type="password" placeholder="Password">
+                    </div>
+                </form>
+            </div>
+            <div class="col-6">
+                <div class="rightSide-col">
+                    <div class="videoContainer">
+                         <iframe width="500" height="300" src="https://www.youtube.com/embed/watch?v=mg3-Owd5dhE&list=PLrbLGOB571zeR7FUQifKmjUpT4ImldCPt"
+                            frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <h1 class="section2header">The Standards is Awesomeness</h1>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="box">
+                  <div class="icon">
+                      <img src="C:\Users\chrou\Desktop\travaillefac\udemy\responsive website\img\devIcon.png">
+                  </div>  
+                  <label>Chat with Me</label>
+                  <p>Lorem ipsum dolor sit amet,
+                       consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                  <div class="icon">
+                      <img src="C:\Users\chrou\Desktop\travaillefac\udemy\responsive website\img\devIcon.png">
+                  </div>  
+                  <label>Learn to Code</label>
+                  <p>Lorem ipsum dolor sit amet,
+                       consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                  <div class="icon">
+                      <img src="C:\Users\chrou\Desktop\travaillefac\udemy\responsive website\img\devIcon.png">
+                  </div>  
+                  <label>Build an Empire</label>
+                  <p>Lorem ipsum dolor sit amet,
+                       consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="learnmore">Learn More</button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row">
+        <div class="col-7">
+            <article>
+                <p>Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit,
+                     sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </article>
+        </div>
+    <div class="col-5">
+        <div class="slopeicon">
+                <img src="C:\Users\chrou\Desktop\travaillefac\udemy\responsive website\img\iOS_Slope.png">
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="foots">
+    <div class="row">
+        <div class="col-4" id="mobilestack">
+            <h1>Company</h1>
+            <ul>
+                <li>About</li>
+                <li>Blogs</li>
+                <li>Creers</li>
+            </ul>
+        </div>
+        <div class="col-4" id="mobilestack">
+            <h1>Category</h1>
+            <ul>
+                <li><img src="C:\Users\chrou\Desktop\travaillefac\udemy\responsive website\img\c++.png" width="16" height="16">&nbsp;C++</li>
+                <li><img src="C:\Users\chrou\Desktop\travaillefac\udemy\responsive website\img\java.png" width="16" height="16">&nbsp;Java</li>
+                <li><img src="C:\Users\chrou\Desktop\travaillefac\udemy\responsive website\img\python.png" width="16" height="16">&nbsp;Python</li>
+                <li><img src="C:\Users\chrou\Desktop\travaillefac\udemy\responsive website\img\javascript.svg" width="16" height="16">&nbsp;Javascript</li>
+            </ul>
+        </div>
+        <div class="col-4" id="mobilestack">
+            <h1>About us</h1>
+            <ul>
+                <li><img src="C:\Users\chrou\Desktop\travaillefac\udemy\responsive website\img\cursor-fill.svg" >&nbsp;4070, M'saken Sousse , Tunisia</li>
+                <li><img src="C:\Users\chrou\Desktop\travaillefac\udemy\responsive website\img\phone-fill.svg">&nbsp;+(216)99997488</li>
+                <li><img src="C:\Users\chrou\Desktop\travaillefac\udemy\responsive website\img\envelope-fill.svg">&nbsp;benchikhladhariachraf@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+    /*change topnav to topnav.responsive*/
+    function clk(){
+        var x= document.getElementById("dropdownclk");
+        if (x.className==="topnav"){
+            x.className +=" responsive";
+        }
+        else{
+            x.className="topnav"
+        }
+    }
+</script>
+</body>
+</html>
